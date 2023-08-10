@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <script>
+        let numeroAcesso = Number(prompt("Insira um numero"));
+        let cor = document.body.style;
+        if (numeroAcesso >= 1000 && numeroAcesso <= 1999) {
+            var acesso = "Acesso liberado";
+            alert(acesso);
+        }
+        else if (numeroAcesso >= 2000 && numeroAcesso <= 2999) {
+            var acesso = "Acesso restrito";
+            alert(acesso);
+        }
+        else {
+            var acesso = "Acesso negado"
+            alert(acesso)
+        }
+
+        switch (acesso) {
+            case "Acesso liberado":
+                cor.backgroundColor = 'green';
+                break;
+            case "Acesso restrito":
+                cor.backgroundColor = 'yellow';
+                break;
+            case "Acesso negado":
+                cor.backgroundColor = 'red';
+                break;
+            default:
+                cor.backgroundColor = 'white';
+        }
+    </script>
 </body>
+
 </html>
