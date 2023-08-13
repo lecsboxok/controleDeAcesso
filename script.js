@@ -1,75 +1,40 @@
-let numeroAcesso = Number(prompt("Insira um numero"));
-let cor = document.body.style;
-if (numeroAcesso >= 1000 && numeroAcesso <=1999) {
-    var acesso = "Acesso liberado";
-    alert(acesso);
+let button = document.getElementById('enviar');
+
+function vai() {
+    let numero = document.getElementById('numero').value;
+    let cor = document.body.style;
+    let letraCor = document.getElementById('resultado').style;
+    if (numero >= 1000 && numero <= 1999) {
+        resultado = "ACESSO LIBERADO";
+    }
+    else if (numero >= 2000 && numero <= 2999) {
+        resultado = "ACESSO RESTRITO";
+    }
+    else {
+        resultado = "ACESSO NEGADO"
+    }
+
+    document.querySelector('#resultado').textContent = resultado;
+
+    switch (resultado) {
+        case "ACESSO LIBERADO":
+            cor.backgroundColor = '#055902';
+            letraCor.color = '#055902'
+            break;
+        case "ACESSO RESTRITO":
+            cor.backgroundColor = '#EAF205';
+            letraCor.color = '#EAF205'
+            break;
+        case "ACESSO NEGADO":
+            cor.backgroundColor = '#8C0327';
+            letraCor.color = '#8C0327'
+            break;
+        default:
+            cor.backgroundColor = '#6C6C73';
+    }
+    
 }
-else if (numeroAcesso >= 2000 && numeroAcesso <= 2999) {
-    var acesso = "Acesso restrito";
-    alert(acesso);
-}
-else {
-    var acesso = "Acesso negado"
-    alert(acesso)
-}
 
-switch (acesso) {
-    case "Acesso liberado":
-        cor.backgroundColor = 'green';
-        break;
-    case "Acesso restrito":
-        cor.backgroundColor = 'yellow';
-        break;
-    case "Acesso negado":
-        cor.backgroundColor = 'red';
-        break;
-    default:
-        cor.backgroundColor = 'white';
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let button = document.getElementById('enviar')
-
-// button.addEventListener('click', function() {
-
-//     let nome = parseInt(document.getElementById('nome').value);
-//     let info = document.getElementById('info');
-
-
-//     if(nome>=1000 && nome<=1999){
-//         var info = ('Bom dia!')
-//       }
-//       else if(nome>=2000 && hora<=2999){
-//         console.log('Boa Tarde!')
-//       }
-//       else{
-//         console.log('Boa Noite!')
-//       }
-// })
 
 
 

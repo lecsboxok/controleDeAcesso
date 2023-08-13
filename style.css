@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ShareTechMono';
+    src: url(fonts/ShareTechMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OverpassMono';
+    src: url(fonts/OverpassMono-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #6C6C73;
+}
+
+/* NÚMEROS */
+#main {
+    display: flex;
+    align-items: center;
+    background-color: #00010D;
+    margin: 60px;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+
+.chave {
+    background-color: #070B0C;
+    padding: 50px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 30px;
+    border-radius: 10px;
+}
+
+.tela {
+    text-align: center;
+}
+
+.digitos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.numero {
+    background-color: #111;
+    filter: drop-shadow(4px 4px 1px #000);
+    height: 70px;
+    width: 90px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 400 25px 'OverpassMono', sans-serif;
+    color: white;
+    border-radius: 10px;
+}
+
+#numero {
+    height: 120px;
+    width: 330px;
+    margin: 20px 0;
+    text-align: center;
+    background-color: #D1F8FF;
+    box-shadow: 3px 3px 2px 0px rgba(101, 101, 101, 0.50) inset;
+    font: 400 40px 'OverpassMono', sans-serif;
+    cursor: pointer;
+}
+
+#enviar {
+    height: 70px;
+    width: 220px;
+    margin: 15px;
+    background-color: #025918;
+    font: 400 25px 'OverpassMono', sans-serif;
+    cursor: pointer;
+}
+
+#resultado {
+    background-color: #D1F8FF;
+    font: 400 55px 'ShareTechMono', sans-serif;
+    width: 500px;
+    text-align: center;
+}
